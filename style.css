@@ -98,13 +98,5 @@ section{
     justify-content: space-between;
     padding: 30rem 15%;
     gap: 30px;
-    
-
 }
 
-.home .home img {
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    width: 100%;
-}
