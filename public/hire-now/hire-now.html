@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job request Form</title>
+    <link rel="stylesheet" href="hire-now.css">
+</head>
+<body>
+    <form id="job-request-form" action="/submit-job-request" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="website">Website (optional):</label>
+        <input type="url" id="website" name="website">
+        
+        <label for="job-description">Description of Job:</label>
+        <textarea id="job-description" name="job-description" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
