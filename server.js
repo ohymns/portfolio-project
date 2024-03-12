@@ -35,3 +35,14 @@ app.get('/about', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+//Dynamic server site
+app.get('/:slug' , (request, response) => {
+    const sluging = request.params.slug
+    response.send(`sorry we dont have ${sluging} on this site`)
+})
+
+app.get('/:slug/*' , (request, response) => {
+    const sluging = request.params.slug
+    response.send(`sorry we dont have ${sluging} on this site`)
+})
