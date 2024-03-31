@@ -12,7 +12,9 @@
   "author": "Olivia Heymanns",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.3",
+    "mongoose": "^8.2.4",
     "nodemailer": "^6.9.12"
   },
   "devDependencies": {

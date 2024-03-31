@@ -22,6 +22,7 @@ body{
 
 .main-text{
     display: flex;
-    font-size: var(--big-font);
+    font-size: var(--p-font);
 
 }
+
