@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="blog.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <% blogposts.forEach(function(blogpostData){ %>
+    <div class="blogpost-single">
+        <h1><%= blogpostData.title %></h1> 
+        <p class="date">
+            <%= blogpostData.date %>
+        </p>
+        <p class="author">
+            <%= blogpostData.author %>
+        </p>
+        <p class="content">
+            <%= blogpostData.content %>
+        </p>
+        <p class="tags">
+            <%= blogpostData.tags %>
+        </p>
+
+    </div>
+    <% }); %>
+
+</body>
+</html>
