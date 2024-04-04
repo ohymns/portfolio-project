@@ -47,7 +47,7 @@ const Blogpost = mongoose.model('Blogpost' , blogSchema)
 //});
 
 app.get('/' , (req,res) => {
-    res.render('index')
+    res.render('landing')
 })
 // Route for the CV download page
 app.get('/cv', (req, res) => {
@@ -61,7 +61,7 @@ app.get('/hire-me', (req, res) => {
 
 // Route for the portfolio
 app.get('/portfolio', (req, res) => {
-    res.sendFile(path.join(process.cwd(), '/public/portfolio-page/portfolio.html'));
+    res.render('portfolio-page/portfolio');
 });
 
 // Route for the portfolio
